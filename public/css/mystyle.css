@@ -1,0 +1,68 @@
+/*------BẮT ĐẦU XỬ LÝ TOP MENU------*/
+/* #topnav{
+    width: 1000px;
+    margin: auto;
+} */
+ul {
+    list-style: none;
+    width: 1000px;
+    margin: auto;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    padding: 10px 30px;
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: chocolate;
+    color: #fff
+
+}
+
+
+
+/*------KẾT THÚC XỬ LÝ TOP MENU------*/
+
+/* Thiết lập các thuộc tính cho tất cả các thẻ p được viết in nghiêng*/
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+/* Thiết lập tất cả các đối tượng có class inDam viết bằng chữ in đậm */
+.inDam {
+    font-weight: bold;
+}
+
+/* Đoạn văn bản có id redParagraph được hiển thị với chữ màu đỏ */
+#redParagraph {
+    color: #ff0000;
+    border: 5px solid black;
+    padding: 20px;
+    margin-bottom: 100px;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+}
+/* Đoạn văn bản có id blueParagraph được hiển thị với chữ màu xanh */
+#blueParagraph {
+    color: #0000ff;
+    text-align: justify;
+    /* border-top: 5px solid orange;
+    border-right: 5px dotted red;
+    border-bottom: 5px solid violet;
+    border-left: 5px solid black; */
+    text-indent: 50px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px black;
+    border: 5px solid orange;
+    /* padding 4 phía t r b l đều là 20px */
+    /* padding: 20px;   */
+
+    padding: 20px 60px;
+}

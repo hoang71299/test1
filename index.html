@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid orange;
+        }
+
+        th,
+        td {
+            padding: 15px;
+        }
+
+
+        .ten_class {
+            background-color: #d8d8d7;
+        }
+
+        #chu_mau_do {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Table 
+    là cấu trúc biểu diễn dữ liệu dạng bảng 
+    Bao gồm các hàng (Table Row : tr) và các cột (column)
+    Hàng trên cùng thường để nó mô tả tiêu đề (table header : th) của các trường dữ liệu 
+    ac hàng tiep theo thường chứa dữ liệu (table data : td)  -->
+    <table>
+        <tr>
+            <th rowspan="2">STT</th>
+            <th colspan="3"> thông tin học viên </th>
+        </tr>
+        <tr>
+            <th>Họ và tên</th>
+            <th>Ngày sinh </th>
+            <th>Giới tính </th>
+        </tr>
+
+        <tr>
+            <th class="ten_class">1</th>
+            <th>Trần Văn Nam </th>
+            <th>11/11/2011 </th>
+            <th>Nam</th>
+        </tr>
+        <tr class="ten_class" id="chu_mau_do">
+            <th>2</th>
+            <th>Trần Văn tuân </th>
+            <th>11/11/2023 </th>
+            <th>Nam</th>
+        </tr>
+        <tr>
+            <th>3</th>
+            <th>Trần Văn adsasd</th>
+            <th>11/11/2023 </th>
+            <th>Nam</th>
+        </tr>
+        <!-- class attribute : tác động đến tất cả thành phần có cùng tên class  -->
+        <!-- id : identifier : định danh (không trùng no duplicate) -->
+        <!-- selector  -->
+
+        <form action="/gui_den_dau" method="get">
+            <label for="ho">Họ tên</label>
+            <input type="text" name="hoTen"><br>
+            <label for="matkhau">Mật khẩu</label>
+            <input type="password" name="matkhau"><br>
+            <!-- Sở thích  --> <br>
+            <input type="radio" name="myGender" value="Nam">
+            <label for="lblNam">Nam</label><br>
+            <input type="radio" name="myGender" value="Nữ">
+            <label for="lblNu">Nữ</label>
+            <br>
+            Sở thich <br>
+            <input type="checkbox" name="ngamBinhMinh" id="" value="Ngắm bình minh">
+            <label for="ngamBinhMinh">Ngắm bình minh</label><br>
+            <input type="checkbox" name="ngamHoangHon" value="Ngắm hoàng hôn">
+            <label for="ngamHoangHon">Ngắm hoàng hôn</label><br>
+            <input type="checkbox" name="ngamTrang" value="Ngắm Trăng">
+            <label for="ngamTrang">Ngắm trăng</label><br>
+            <input type="checkbox" name="ngamNguoiDep" value="Ngắm người đẹp">
+            <label for="ngamNguoiDep">Ngắm người đẹp</label><br>
+            <input type="checkbox" name="NgamCanh" value="Ngắm cảnh">
+            <label for="NgamCanh">Ngắm cảnh</label><br>
+
+
+            <select name="thichAn" id="">
+                <option value="">Cam</option>
+                <option value="">Chanh</option>
+                <option value="">Quýt</option>
+            </select>
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </table>
+</body>
+
+</html>
